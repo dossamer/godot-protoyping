@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.882353, 0.556863, 0.556863, 1 )
+metallic = 0.91
+metallic_specular = 0.14
+roughness = 0.58
+ao_enabled = true
+ao_light_affect = 0.14
+ao_on_uv2 = false
+ao_texture_channel = 0
+transmission_enabled = true
+transmission = Color( 0.498039, 0.498039, 0.498039, 1 )
+
+[node name="Root" type="Spatial"]
+
+[node name="CSGBox" type="CSGBox" parent="."]
+width = 1.98628
+height = 0.767458
+depth = 4.27768
+material = SubResource( 1 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.436701, -0.386679, 0.812263, -0.0577397, 0.889, 0.454252, -0.897752, -0.245272, 0.3659, 7.03101, 3.66053, 2.98689 )
+fov = 79.6679
